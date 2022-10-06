@@ -1,0 +1,14 @@
+.about {
+    display: flex;
+}
+
+.about-photo {
+    width: 50vw;
+}
+.about-photo  > img{
+    width: 500px;
+}
+
+.about-content {
+    width: 50vw;
+}

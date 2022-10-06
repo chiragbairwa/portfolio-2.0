@@ -3,7 +3,6 @@ const Header = () => {
     <div className="header">
         <img src="/vercel.svg" height={30} ></img>
         <div>
-
             <nav>
                 <a href="#">About</a>
                 <a href="#">Skills</a>

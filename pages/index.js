@@ -1,6 +1,7 @@
 import Head from 'next/head'
-import Header from '../components/header'
 import Welcome from '../components/welcome'
+import About from '../components/about'
+import Skills from '../components/skills'
 
 export default function Home() {
   return (
@@ -11,9 +12,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
       <main>
-        <Welcome></Welcome>
+        <Welcome />
+        <About />
+        <Skills />
       </main>
 
       <footer>

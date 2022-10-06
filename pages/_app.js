@@ -2,6 +2,8 @@ import '../styles/globals.css'
 
 import '../styles/header.css'
 import '../styles/welcome.css'
+import '../styles/about.css'
+import '../styles/skills.css'
 
 
 

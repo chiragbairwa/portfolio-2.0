@@ -1,0 +1,23 @@
+.skills {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content:space-evenly;
+}
+.skills-front {    
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color:brown;
+}
+
+.skills-back {
+    width: 100%;
+    background-color: aqua;
+}
+
+.skills-grid {
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+}

@@ -1,3 +1,6 @@
+.welcome {
+    height: 100vh;
+}
 .welcome-msg {
     margin: 8rem 0 0 0;
 }
@@ -12,8 +15,20 @@
     margin-top: 3rem;
     align-items: center;
 }
-.welcome-cta > img {
-    margin-left: 8px;
+.welcome-cta > button {
+    cursor: pointer;
+    padding: 8px 16px;
+    margin-right: 8px;
+    border-radius: 4px;
+    background-color:transparent;
+    border: 1px solid black;
+    color: black;
+}
+.welcome-cta > a {
+    margin-left: 16px;
+}
+.welcome-cta > a > img {
+    color: white;
 }
 .welcome-photo {
     position: absolute;

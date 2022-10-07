@@ -4,8 +4,8 @@ import '../styles/header.css'
 import '../styles/welcome.css'
 import '../styles/about.css'
 import '../styles/skills.css'
-
-
+import '../styles/projects.css'
+import '../styles/contact.css'
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />

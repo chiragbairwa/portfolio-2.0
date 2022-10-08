@@ -1,11 +1,15 @@
-import { useRef } from 'react'
+// import { useRef } from 'react'
 
 const Header = () => {
-  let [header] = useRef(null)
+  // let [header] = useRef(null)
 
-  //   console.log(header.current)
+  const themeModeHandler = () => {
+    let element = document.body;
+    element.classList.toggle("dark-mode");
+    console.log("hello")
+  }
   return (
-    <div className="header" ref={header}>
+    <div className="header">
       <img src="/vercel.svg" height={30}></img>
       <div>
         <nav>
@@ -14,10 +18,14 @@ const Header = () => {
           <a href="#">Work</a>
           <a href="#">Contact</a>
         </nav>
-        <div></div>
+        {/* Dark mode Toggle */}
+        <label className="switch" >
+          <input type="checkbox" onClick={themeModeHandler}/>
+          <span></span>
+        </label>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

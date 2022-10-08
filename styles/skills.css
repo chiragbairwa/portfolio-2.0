@@ -1,23 +1,63 @@
 .skills {
     display: flex;
     text-align: center;
-    align-items: center;
-    justify-content:space-evenly;
-}
-.skills-front {    
     justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color:brown;
-}
-
-.skills-back {
-    width: 100%;
-    background-color: aqua;
 }
 
 .skills-grid {
-    width: 400px;
-    height: 400px;
-    background-color: blue;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    margin: 8px 7rem;
+    color: black;
+    }
+.skills-grid > svg {
+    width: 64px;
+    margin: 8px;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 10px;
 }
+.skills-grid > svg:hover {
+    
+    border-radius: 4px;
+    background-color:whitesmoke;
+    border: 1px solid black;
+}
+
+.html-svg:hover {
+    fill: #E34F26;
+}
+.css-svg:hover {
+    fill: #1572B6;
+}
+.js-svg:hover {
+    fill: #F7DF1E;
+}
+.react-svg:hover {
+    fill: #61DAFB;
+}
+.nextjs-svg:hover {
+    fill: #000000;
+}
+.tailwindcss-svg:hover {
+    fill: #06B6D4;
+}
+
+/* Backend */
+.nodejs-svg:hover {
+    fill: #339933;
+}
+.express-svg:hover {
+    fill: #000000;
+}
+.python-svg:hover {
+    fill: #3776AB;
+}
+.mysql-svg:hover {
+    fill: #4479A1;
+}
+.firebase-svg:hover {
+    fill: #FFCA28;
+}
+

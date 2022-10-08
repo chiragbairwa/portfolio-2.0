@@ -1,5 +1,5 @@
 .welcome {
-    height: 100vh;
+    height: 64vh;
 }
 .welcome-msg {
     margin: 8rem 0 0 0;
@@ -9,7 +9,17 @@
     margin: 8px 0;
     font-weight: 500;
 }
-
+.welcome-msg > h2 {
+    font-size: 2rem;
+}
+.welcome-msg > h3 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+.welcome-msg > h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
 .welcome-cta {
     display: flex;
     margin-top: 3rem;
@@ -24,12 +34,18 @@
     border: 1px solid black;
     color: black;
 }
-.welcome-cta > a {
-    margin-left: 16px;
-}
-.welcome-cta > a > img {
+.welcome-cta > button:hover{
     color: white;
+    background-color: black;
 }
+.welcome-cta > a {
+    margin-left: 1rem;
+}
+
+.welcome-cta > a > svg {
+    height: 25px;
+}
+
 .welcome-photo {
     position: absolute;
     top: 8.5rem;

@@ -1,5 +1,13 @@
+/* :root {
+  --dark-color : 'white';
+  --dark-background : 'black';
+} */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&display=swap');
+
 html,
 body {
+  scroll-behavior: smooth;
   padding: 0 40px 0 56px;
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -15,11 +23,13 @@ a {
 }
 
 /* @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+  :root {
+    --dark-color : 'black';
+    --dark-background : 'white';
   }
   body {
-    color: black;
-    background: white;
+    color: var(--dark-color);
+    background: var(--dark-background);
   }
 } */
+

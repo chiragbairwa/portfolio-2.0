@@ -6,11 +6,10 @@ const Header = () => {
   const themeModeHandler = () => {
     let element = document.body;
     element.classList.toggle("dark-mode");
-    console.log("hello")
   }
   return (
     <div className="header">
-      <img src="/vercel.svg" height={30}></img>
+      <span>CHIRAG</span>
       <div>
         <nav>
           <a href="#">About</a>

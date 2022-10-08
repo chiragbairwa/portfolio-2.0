@@ -1,14 +1,19 @@
 .about {
     display: flex;
+    align-items: center ;
+    justify-content: center;
 }
 
 .about-photo {
     width: 50vw;
 }
 .about-photo  > img{
-    width: 500px;
+    width: 400px;
+}
+.about-content {
+    width: 50vw;   
 }
 
-.about-content {
-    width: 50vw;
+.about-content > p {
+    font-size: 1.3rem;
 }

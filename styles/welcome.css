@@ -1,24 +1,22 @@
 .welcome {
-    height: 64vh;
-}
-.welcome-msg {
-    margin: 8rem 0 0 0;
+    display: flex;
+    margin: 8rem 0 4rem 0;
 }
 
 .welcome-msg h1,h2,h3{
-    margin: 8px 0;
-    font-weight: 500;
-}
-.welcome-msg > h2 {
-    font-size: 2rem;
-}
-.welcome-msg > h3 {
-    font-size: 2rem;
+    margin: 0 0;
     font-weight: 500;
 }
 .welcome-msg > h1 {
     font-size: 3rem;
     font-weight: 600;
+}
+.welcome-msg > h2 {
+    font-size: 2rem;
+}
+.welcome-msg > h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 .welcome-cta {
     display: flex;
@@ -31,8 +29,8 @@
     margin-right: 8px;
     border-radius: 4px;
     background-color:transparent;
-    border: 1px solid black;
-    color: black;
+    border: 1px solid currentColor;
+    color: currentColor;
 }
 .welcome-cta > button:hover{
     color: white;
@@ -40,28 +38,26 @@
 }
 .welcome-cta > a {
     margin-left: 1rem;
+    transition: all 0.1s;
 }
-
+.welcome-cta > a:hover{
+    transform: scale(1.2);
+}
 .welcome-cta > a > svg {
     height: 25px;
 }
 
-.welcome-photo {
-    position: absolute;
-    top: 8.5rem;
-    right: 6rem;
-    border-radius: 52px;
-}
 .welcome-photo > img {
     width: 600px;
+    margin-top: -6rem;
+    margin-bottom: 1rem;
 }
+
 .welcome-photo > div {
     background-color: rgb(194, 94, 36);
     width: 300px;
     height: 280px;
-    position: absolute;
-    top: 3.5rem;
-    right: 9.5rem;
+
     z-index: -1;
     border-radius: 200px;
 }

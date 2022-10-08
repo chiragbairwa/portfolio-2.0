@@ -6,7 +6,7 @@ const Contact = () => {
     <div className="contact">
       <div></div>
       <div>
-        <h1>Let's Get in Touch</h1>
+        <h1>{"Let's Get in Touch"}</h1>
         <form onSubmit={formHandler}>
           <input type="text" placeholder="Your Name" />
           <input type="email" placeholder="Your Email" />

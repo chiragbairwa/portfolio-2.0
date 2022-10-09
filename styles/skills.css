@@ -1,64 +1,93 @@
 .skills {
-    height: 60vh;
-    display: flex;
-    text-align: center;
-    justify-content: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skills-heading {
+  padding: 7rem 0 0 3rem;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
 }
 
 .skills-grid {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: center;
-    margin: 8px 7rem;
-    color: currentColor;
-    }
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  margin: 8px 7rem;
+  color: currentColor;
+}
 .skills-grid > svg {
-    width: 64px;
-    margin: 8px;
-    padding: 8px;
-    cursor: pointer;
-    border-radius: 10px;
+  width: 64px;
+  margin: 8px;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 10px;
+  /* color: rgba(0, 0, 0, 0.5); */
 }
 .skills-grid > svg:hover {
-    
-    border-radius: 4px;
-    background-color:whitesmoke;
-    border: 1px solid black;
+  border-radius: 4px;
+  transform: scale(1.2);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .html-svg:hover {
-    fill: #E34F26;
+  border: 1px solid #e34f26;
+  fill: #e34f26;
 }
 .css-svg:hover {
-    fill: #1572B6;
+  border: 1px solid #1572b6;
+  fill: #1572b6;
 }
 .js-svg:hover {
-    fill: #F7DF1E;
+  border: 1px solid #f7df1e;
+  fill: #f7df1e;
 }
 .react-svg:hover {
-    fill: #61DAFB;
+  border: 1px solid #61dafb;
+  fill: #61dafb;
 }
 .nextjs-svg:hover {
-    fill: #000000;
+  border: 1px solid #000000;
+  fill: #000000;
 }
 .tailwindcss-svg:hover {
-    fill: #06B6D4;
+  border: 1px solid #06b6d4;
+  fill: #06b6d4;
+}
+
+.figma-svg:hover {
+  border: 1px solid #F24E1E;
+  fill: #F24E1E;
 }
 
 /* Backend */
 .nodejs-svg:hover {
-    fill: #339933;
+  border: 1px solid #339933;
+  fill: #339933;
 }
 .express-svg:hover {
-    fill: #000000;
+  border: 1px solid #000000;
+  fill: #000000;
 }
 .python-svg:hover {
-    fill: #3776AB;
+  border: 1px solid #3776ab;
+  fill: #3776ab;
 }
 .mysql-svg:hover {
-    fill: #4479A1;
+  border: 1px solid #4479a1;
+  fill: #4479a1;
 }
 .firebase-svg:hover {
-    fill: #FFCA28;
+  border: 1px solid #ffca28;
+  fill: #ffca28;
 }
 
+.skills > img {
+  margin-top: -10rem;
+}

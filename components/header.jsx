@@ -1,25 +1,53 @@
-// import { useRef } from 'react'
+import { useRef, useEffect, useState } from "react";
 
 const Header = () => {
-  // let [header] = useRef(null)
+
+  let header = useRef(null)
+  const [darkMode , setdarkMode] = useState('white')
+
+  useEffect(() =>{
+
+    window.onscroll = () => {
+      if (
+        document.body.scrollTop > 50 ||
+        document.documentElement.scrollTop > 50
+      ) {
+        header.current.style.boxShadow = "0 0 4px #888888"
+        header.current.style.backgroundColor = darkMode
+        header.current.style.top = '0'
+      } else {
+        header.current.style.top = '1rem'
+        header.current.style.boxShadow = "0 0 0 #fff"
+      }
+    }
+  }, [darkMode]);
 
   const themeModeHandler = () => {
+    if(darkMode === 'white'){
+      header.current.style.backgroundColor = '#121212'
+      setdarkMode('#121212')
+    }
+    else {
+      header.current.style.backgroundColor = 'white'
+      setdarkMode('white')
+    }
+      
     let element = document.body;
     element.classList.toggle("dark-mode");
-  }
+  };
   return (
-    <div className="header">
+    <div className="header" ref={header}>
       <span>CHIRAG</span>
       <div>
         <nav>
-          <a href="#">About</a>
-          <a href="#">Skills</a>
-          <a href="#">Work</a>
-          <a href="#">Contact</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#work">Work</a>
+          <a href="#contact">Contact</a>
         </nav>
         {/* Dark mode Toggle */}
-        <label className="switch" >
-          <input type="checkbox" onClick={themeModeHandler}/>
+        <label className="switch">
+          <input type="checkbox" id="dark-mode-toggle" onClick={themeModeHandler} />
           <span></span>
         </label>
       </div>

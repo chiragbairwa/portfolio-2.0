@@ -3,7 +3,7 @@ const Contact = () => {
     e.preventdefault()
   }
   return (
-    <div className="contact">
+    <div className="contact" id="contact">
       <div></div>
       <div>
         <h1>{"Let's Get in Touch"}</h1>

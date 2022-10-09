@@ -1,63 +1,85 @@
 .welcome {
-    display: flex;
-    margin: 8rem 0 4rem 0;
+  display: flex;
+  margin: 8rem 0 0 0;
 }
 
-.welcome-msg h1,h2,h3{
-    margin: 0 0;
-    font-weight: 500;
+.welcome-msg h1,
+h2,
+h3 {
+  margin: 0 0;
+  font-weight: 500;
 }
 .welcome-msg > h1 {
-    font-size: 3rem;
-    font-weight: 600;
+  font-size: 3rem;
+  font-weight: 600;
 }
 .welcome-msg > h2 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 .welcome-msg > h3 {
-    font-size: 1.5rem;
-    font-weight: 500;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 .welcome-cta {
-    display: flex;
-    margin-top: 3rem;
-    align-items: center;
+  display: flex;
+  margin-top: 3rem;
+  align-items: center;
 }
-.welcome-cta > button {
-    cursor: pointer;
-    padding: 8px 16px;
-    margin-right: 8px;
-    border-radius: 4px;
-    background-color:transparent;
-    border: 1px solid currentColor;
-    color: currentColor;
+
+.resume-btn {
+  border: 1px solid currentColor;
+  padding: 0.5rem 1rem;
+  border-radius: 2px;
+  color: currentColor;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: color 150ms ease-in-out;
 }
-.welcome-cta > button:hover{
-    color: white;
-    background-color: black;
+.resume-btn:after {
+  content: "";
+  position: absolute;
+  /* display: block; */
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 100%;
+  background: #99b4df;
+  z-index: -1;
+  transition: width 150ms ease-in-out;
+  border-radius: 2px;
+}
+
+.resume-btn:hover {
+  color: #fff;
+}
+.resume-btn:hover:after {
+  width: 110%;
 }
 .welcome-cta > a {
-    margin-left: 1rem;
-    transition: all 0.1s;
+  margin-right: 1rem;
+  transition: all 0.1s;
 }
-.welcome-cta > a:hover{
-    transform: scale(1.2);
+.welcome-cta > a:nth-child(n+2):hover {
+  transform: scale(1.2);
 }
 .welcome-cta > a > svg {
-    height: 25px;
+  height: 1.8rem;
+  margin-top: 0.3rem;
 }
 
 .welcome-photo > img {
-    width: 600px;
-    margin-top: -6rem;
-    margin-bottom: 1rem;
+  width: 600px;
+  margin-top: -6rem;
+  margin-bottom: 1rem;
 }
 
 .welcome-photo > div {
-    background-color: rgb(194, 94, 36);
-    width: 300px;
-    height: 280px;
+  background-color: rgb(194, 94, 36);
+  width: 300px;
+  height: 280px;
 
-    z-index: -1;
-    border-radius: 200px;
+  z-index: -1;
+  border-radius: 200px;
 }

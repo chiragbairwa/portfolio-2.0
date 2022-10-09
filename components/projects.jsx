@@ -1,7 +1,7 @@
 const Projects = () => {
   return (
     <>
-      <div className="projects">
+      <div className="projects" id="work">
         <div>
           <div className="projects-card">
             <h1>Projects</h1>

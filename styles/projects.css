@@ -1,15 +1,60 @@
 .projects {
   padding-top: 7rem;
-  display: flex;
-  gap: 3rem;
-  justify-content: center;
-  /* align-items: center; */
 }
-
+.projects > h1{
+  margin-left: 3rem;
+}
 .card {
-  margin-bottom: 100px;
-  width: 400px;
+  color: white;
+  display: flex;
+  justify-content:space-between ;
+
+  padding: 1rem;
+  margin: 2rem 0 ;
+  border-radius: 8px;
+  background-color: rgb(104, 104, 218);
+}
+.card > img {
   height: 300px;
   border-radius: 8px;
-  background-color: antiquewhite;
 }
+
+.projects-card-content{
+  margin-left: 2rem;
+}
+.projects-card-content > h2{
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+
+.project-skills-list{
+  display: flex;
+  
+}
+.project-skills-list > div{
+  display: flex;
+  margin-top: 1rem;
+}
+.project-skills-list > div >  span{
+  margin: 0 1rem 0 0.2rem;
+}
+
+.projects-card-content > p{
+  margin: 1.5rem 0;
+}
+
+.project-btn {
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+  border-radius: 4px;
+  border: 1px solid currentColor;
+}
+
+.project-btn:hover{
+  color: currentColor;
+  background-color: #99b4df;
+  border: 1px solid #99b4df;
+}
+
+

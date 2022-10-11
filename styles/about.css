@@ -1,5 +1,5 @@
 .about {
-    padding-top: 7rem;
+    padding-top: 6rem;
     display: flex;
     align-items: center ;
     justify-content: center;
@@ -9,7 +9,7 @@
     width: 50vw;
 }
 .about-photo  > img{
-    width: 400px;
+    width: 550px;
 }
 .about-content {
     width: 50vw;   

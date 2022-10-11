@@ -1,25 +1,25 @@
 .projects {
-  padding-top: 7rem;
+  padding-top: 5rem;
 }
 .projects > h1{
   margin-left: 3rem;
 }
 .card {
-  color: white;
   display: flex;
   justify-content:space-between ;
-
-  padding: 1rem;
-  margin: 2rem 0 ;
+  user-select: none;
+  padding: 1.5rem;
+  margin: 2rem 5rem ;
   border-radius: 8px;
-  background-color: rgb(104, 104, 218);
+  background-color: #121212;
 }
+
 .card > img {
-  height: 300px;
+  height: 260px;
   border-radius: 8px;
 }
-
 .projects-card-content{
+  color: currentColor;
   margin-left: 2rem;
 }
 .projects-card-content > h2{
@@ -52,7 +52,7 @@
 }
 
 .project-btn:hover{
-  color: currentColor;
+  color: var(--color);
   background-color: #99b4df;
   border: 1px solid #99b4df;
 }

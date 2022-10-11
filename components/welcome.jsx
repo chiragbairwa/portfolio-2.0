@@ -33,7 +33,7 @@ const Welcome = () => {
         </div>
 
         <div className="welcome-photo">
-          <img src="/work-from-home.svg" />
+          <img src="/work-from-home.svg" alt="Hero Photo" />
         </div>
         
       </div>

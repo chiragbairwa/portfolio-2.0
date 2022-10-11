@@ -1,10 +1,10 @@
 const Contact = () => {
   const formHandler = (e) => {
-    e.preventdefault()
+    e.preventDefault()
   }
   return (
     <div className="contact" id="contact">
-      <div></div>
+      <img src="/contactus-illustration.svg" alt="Contact Me" />
       <div>
         <h1>{"Let's Get in Touch"}</h1>
         <form onSubmit={formHandler}>

@@ -1,12 +1,28 @@
-import Head from 'next/head'
-import Header from '../components/header'
-import Welcome from '../components/welcome'
-import About from '../components/about'
-import Skills from '../components/skills'
-import Projects from '../components/projects'
-import Contact from '../components/contact'
+import Head from "next/head";
+import Header from "../components/header";
+import Welcome from "../components/welcome";
+import About from "../components/about";
+import Skills from "../components/skills";
+import Projects from "../components/projects";
+import Contact from "../components/contact";
 
 export default function Home() {
+  const Code = () => (
+    <svg
+      width="16px"
+      height="16px"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill="none"
+        stroke="currentcolor"
+        stroke-width="2"
+        d="M9,22 L15,2 M17,17 L22,12 L17,7 M7,17 L2,12 L7,7"
+      />
+    </svg>
+  );
+
   return (
     <>
       <Head>
@@ -24,7 +40,13 @@ export default function Home() {
         <Contact />
       </main>
 
-      <footer></footer>
+      <footer>
+        <p>© 2022 - Designed and Developed by Chirag.<br/>
+          <Code/> with <a href="https://nextjs.org/" rel="noreferrer" target="_blank" >NextJs</a>. Hosted on 
+          <a href="https://vercel.com/" rel="noreferrer" target="_blank" > Vercel.</a>
+        </p>
+
+      </footer>
     </>
-  )
+  );
 }

@@ -2,7 +2,7 @@ const About = () => {
     return(
     <div className="about" id="about">
         <div className="about-photo">
-            <img src="/work.png" ></img>
+            <img src="/aboutme-illustration.svg" alt="About Me" ></img>
         </div>
         <div className="about-content">
             <h1>About Me</h1>

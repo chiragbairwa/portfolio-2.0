@@ -162,7 +162,7 @@ const Skills = () => {
           </div>
         </div>
 
-        <img src="/skill-photo.png" height="500" />
+        <img src="/skills-illustration.svg" alt="Skills Photo" height="550" />
       </div>
     </>
   );

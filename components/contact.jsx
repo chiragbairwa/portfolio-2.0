@@ -4,8 +4,12 @@ const Contact = () => {
   }
   return (
     <div className="contact" id="contact">
-      <img src="/contactus-illustration.svg" alt="Contact Me" />
-      <div>
+      <img
+        src="/contactus-illustration.svg"
+        alt="Contact Me"
+        data-aos="fade-right"
+      />
+      <div data-aos="fade-left">
         <h1>{"Let's Get in Touch"}</h1>
         <form onSubmit={formHandler}>
           <input type="text" placeholder="Your Name" />

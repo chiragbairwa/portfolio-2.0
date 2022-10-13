@@ -1,15 +1,15 @@
 .projects {
   padding-top: 5rem;
 }
-.projects > h1{
+.projects > h1 {
   margin-left: 3rem;
 }
 .card {
   display: flex;
-  justify-content:space-between ;
+  justify-content: space-between;
   user-select: none;
   padding: 1.5rem;
-  margin: 2rem 5rem ;
+  margin: 2rem 5rem;
   border-radius: 8px;
   background-color: #121212;
 }
@@ -18,29 +18,27 @@
   height: 260px;
   border-radius: 8px;
 }
-.projects-card-content{
-  color: currentColor;
+.projects-card-content {
+  color: white;
   margin-left: 2rem;
 }
-.projects-card-content > h2{
+.projects-card-content > h2 {
   font-weight: 600;
   letter-spacing: 1px;
 }
 
-
-.project-skills-list{
+.project-skills-list {
   display: flex;
-  
 }
-.project-skills-list > div{
+.project-skills-list > div {
   display: flex;
   margin-top: 1rem;
 }
-.project-skills-list > div >  span{
+.project-skills-list > div > span {
   margin: 0 1rem 0 0.2rem;
 }
 
-.projects-card-content > p{
+.projects-card-content > p {
   margin: 1.5rem 0;
 }
 
@@ -51,10 +49,8 @@
   border: 1px solid currentColor;
 }
 
-.project-btn:hover{
+.project-btn:hover {
   color: var(--color);
   background-color: #99b4df;
   border: 1px solid #99b4df;
 }
-
-

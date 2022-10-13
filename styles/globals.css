@@ -5,7 +5,7 @@
 
 html,
 body {
-  scroll-behavior: smooth ;
+  scroll-behavior: smooth;
   padding: 0;
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -33,7 +33,6 @@ footer {
   margin-top: 6rem;
 }
 
-
 /* @media (prefers-color-scheme: dark) {
   :root {
     --dark-color : 'black';
@@ -44,4 +43,3 @@ footer {
     background: var(--dark-background);
   }
 } */
-

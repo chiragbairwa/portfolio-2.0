@@ -7,6 +7,7 @@ import '../styles/skills.css'
 import '../styles/projects.css'
 import '../styles/contact.css'
 
+import 'aos/dist/aos.css'
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
 }

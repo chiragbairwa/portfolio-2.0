@@ -1,12 +1,19 @@
-import Head from "next/head";
-import Header from "../components/header";
-import Welcome from "../components/welcome";
-import About from "../components/about";
-import Skills from "../components/skills";
-import Projects from "../components/projects";
-import Contact from "../components/contact";
+import { useEffect } from 'react'
+
+import Head from 'next/head'
+import Header from '../components/header'
+import Welcome from '../components/welcome'
+import About from '../components/about'
+import Skills from '../components/skills'
+import Projects from '../components/projects'
+import Contact from '../components/contact'
+import AOS from 'aos/dist/aos'
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init()
+  }, [])
+
   const Code = () => (
     <svg
       width="16px"
@@ -17,11 +24,11 @@ export default function Home() {
       <path
         fill="none"
         stroke="currentcolor"
-        stroke-width="2"
+        strokeWidth="2"
         d="M9,22 L15,2 M17,17 L22,12 L17,7 M7,17 L2,12 L7,7"
       />
     </svg>
-  );
+  )
 
   return (
     <>
@@ -41,12 +48,20 @@ export default function Home() {
       </main>
 
       <footer>
-        <p>© 2022 - Designed and Developed by Chirag.<br/>
-          <Code/> with <a href="https://nextjs.org/" rel="noreferrer" target="_blank" >NextJs</a>. Hosted on 
-          <a href="https://vercel.com/" rel="noreferrer" target="_blank" > Vercel.</a>
+        <p>
+          © 2022 - Designed and Developed by Chirag.
+          <br />
+          <Code /> with{' '}
+          <a href="https://nextjs.org/" rel="noreferrer" target="_blank">
+            NextJs
+          </a>
+          . Hosted on
+          <a href="https://vercel.com/" rel="noreferrer" target="_blank">
+            {' '}
+            Vercel.
+          </a>
         </p>
-
       </footer>
     </>
-  );
+  )
 }

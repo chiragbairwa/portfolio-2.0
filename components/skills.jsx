@@ -5,7 +5,7 @@ const Skills = () => {
         Skills & Experiences
       </h1>
       <div className="skills">
-        <div className="skills-container">
+        <div className="skills-container" data-aos="fade-right">
           <div className="skills-front">
             {/* <h2>Front-End Tech</h2> */}
             <div className="skills-grid">
@@ -162,10 +162,15 @@ const Skills = () => {
           </div>
         </div>
 
-        <img src="/skills-illustration.svg" alt="Skills Photo" height="550" />
+        <img
+          src="/skills-illustration.svg"
+          alt="Skills Photo"
+          height="550"
+          data-aos="fade-left"
+        />
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Skills;
+export default Skills

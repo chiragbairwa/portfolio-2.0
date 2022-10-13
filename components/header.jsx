@@ -1,8 +1,8 @@
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState } from 'react'
 
 const Header = () => {
-  let header = useRef(null);
-  const [darkMode, setdarkMode] = useState("white");
+  let header = useRef(null)
+  const [darkMode, setdarkMode] = useState('white')
 
   useEffect(() => {
     window.onscroll = () => {
@@ -10,42 +10,42 @@ const Header = () => {
         document.body.scrollTop > 50 ||
         document.documentElement.scrollTop > 50
       ) {
-        header.current.style.boxShadow = "0 0 4px #888888";
-        header.current.style.backgroundColor = darkMode;
-        header.current.style.top = "0";
+        header.current.style.boxShadow = '0 0 4px #888888'
+        header.current.style.backgroundColor = darkMode
+        header.current.style.top = '0'
       } else {
-        header.current.style.top = "1rem";
-        header.current.style.boxShadow = "0 0 0 #fff";
+        header.current.style.top = '1rem'
+        header.current.style.boxShadow = '0 0 0 #fff'
       }
-    };
-  }, [darkMode]);
+    }
+  }, [darkMode])
 
   const themeModeHandler = () => {
-    if (darkMode === "white") {
-      header.current.style.backgroundColor = "#121212";
-      setdarkMode("#121212");
-      
-        // document.getElementById("project-card1").style.backgroundColor = "#fff";
-        // document.getElementById("project-card2").style.backgroundColor = "#fff";
-        // document.getElementById("project-card3").style.backgroundColor = "#fff";
-        // console.log(document.getElementsByClassName("projects-card-content").style)
+    if (darkMode === 'white') {
+      header.current.style.backgroundColor = '#121212'
+      setdarkMode('#121212')
+
+      // document.getElementById("project-card1").style.backgroundColor = "#fff";
+      // document.getElementById("project-card2").style.backgroundColor = "#fff";
+      // document.getElementById("project-card3").style.backgroundColor = "#fff";
+      // console.log(document.getElementsByClassName("projects-card-content").style)
     } else {
-      header.current.style.backgroundColor = "white";
-      setdarkMode("white");
+      header.current.style.backgroundColor = 'white'
+      setdarkMode('white')
       // document.getElementById("project-card1").style.backgroundColor =
       //   "#121212";
       // document.getElementById("project-card2").style.backgroundColor =
       //   "#121212";
       // document.getElementById("project-card3").style.backgroundColor =
       // "#121212";
-      
+
       // document.getElementsByClassName("projects-card-content").style.backgroundColor = "pink";
     }
 
-    document.body.classList.toggle("dark-mode");
-  };
+    document.body.classList.toggle('dark-mode')
+  }
   return (
-    <div className="header" ref={header}>
+    <div className="header" ref={header} data-aos="fade-down">
       <span>CHIRAG</span>
       <div>
         <nav>
@@ -65,7 +65,7 @@ const Header = () => {
         </label>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

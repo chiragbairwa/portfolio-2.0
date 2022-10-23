@@ -9,6 +9,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 body {
   color: var(--bg-color);
@@ -43,3 +44,15 @@ footer {
     background: var(--dark-background);
   }
 } */
+
+@media only screen and (max-width: 600px) {
+  main {
+    padding: 0 1rem;
+  }
+  footer {
+    padding: 0 0.9rem;
+  }
+  img {
+    object-fit: cover;
+  }
+}

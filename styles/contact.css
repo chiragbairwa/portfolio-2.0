@@ -20,37 +20,44 @@
   outline: none;
 }
 
-.contact > div > form >input{
-  border:3px solid #aaa;
-  border-radius:4px;
-  outline:none;
-  padding:8px;
-  box-sizing:border-box;
-  transition:.3s;
+.contact > div > form > input {
+  border: 3px solid #aaa;
+  border-radius: 4px;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.3s;
   height: 2rem;
   border: 1px solid #ccc;
   padding: 7px 14px 9px;
   transition: 0.4s;
 }
 
-.contact > div > form >input:not([type="submit"]):focus{
-  border-color:#99b4df;
+.contact > div > form > input:not([type='submit']):focus {
+  border-color: #99b4df;
   box-shadow: 0 0 8px 0 #99b4df;
 }
 
 textarea {
-  resize:vertical;
+  resize: none;
   height: 8rem;
   border-color: #ccc;
-  border-radius:4px;
+  border-radius: 4px;
 }
 
 textarea:focus {
-  border-color:#99b4df;
-  box-shadow:0 0 8px 0 #99b4df;
+  border-color: #99b4df;
+  box-shadow: 0 0 8px 0 #99b4df;
 }
 
-.contact > div > form >input[type="submit"] {
+.contact > div > form > input[type='submit'] {
   cursor: pointer;
   /* background-color: transparent; */
+}
+
+@media only screen and (max-width: 600px) {
+  .contact {
+    flex-direction: column;
+    justify-content: center;
+  }
 }

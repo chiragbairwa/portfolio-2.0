@@ -1,4 +1,6 @@
 .header {
+  width: 100vw;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -30,7 +32,7 @@
 .dark-mode {
   background-color: #121212;
   color: rgba(255, 255, 255, 0.9);
-  
+
   --color: rgba(255, 255, 255, 0.9);
   --bg-color: #121212;
 }
@@ -63,7 +65,7 @@
   background: #346abf;
 }
 .switch input + span:before {
-  content: "";
+  content: '';
   display: inline-block;
   position: absolute;
   top: 50%;
@@ -78,4 +80,16 @@
 .switch input:checked + span:before {
   background-image: url(/dark-mode.svg);
   left: 1.7rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    padding: 1rem 3rem;
+  }
+  .header > div > nav {
+    display: none;
+  }
+  .switch {
+    float: right;
+  }
 }

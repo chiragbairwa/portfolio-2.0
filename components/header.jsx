@@ -24,22 +24,9 @@ const Header = () => {
     if (darkMode === 'white') {
       header.current.style.backgroundColor = '#121212'
       setdarkMode('#121212')
-
-      // document.getElementById("project-card1").style.backgroundColor = "#fff";
-      // document.getElementById("project-card2").style.backgroundColor = "#fff";
-      // document.getElementById("project-card3").style.backgroundColor = "#fff";
-      // console.log(document.getElementsByClassName("projects-card-content").style)
     } else {
       header.current.style.backgroundColor = 'white'
       setdarkMode('white')
-      // document.getElementById("project-card1").style.backgroundColor =
-      //   "#121212";
-      // document.getElementById("project-card2").style.backgroundColor =
-      //   "#121212";
-      // document.getElementById("project-card3").style.backgroundColor =
-      // "#121212";
-
-      // document.getElementsByClassName("projects-card-content").style.backgroundColor = "pink";
     }
 
     document.body.classList.toggle('dark-mode')
@@ -57,7 +44,7 @@ const Header = () => {
         {/* Dark mode Toggle */}
         <label className="switch">
           <input
-            type="checkbox"
+            type="button"
             id="dark-mode-toggle"
             onClick={themeModeHandler}
           />

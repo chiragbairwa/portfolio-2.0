@@ -14,6 +14,7 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Iceberg&display=swap"
           rel="stylesheet"
         />
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
       </Head>
       <body>
         <Main />

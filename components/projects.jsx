@@ -45,7 +45,11 @@ const Projects = () => {
 
         <div className="projects-card">
           <div className="card" id="project-card1" data-aos="flip-left">
-            <img alt="Project Images" src="/library-photo.png" />
+            <img
+              alt="Project Images"
+              src="/library-photo.webp"
+              loading="lazy"
+            />
             <div className="projects-card-content">
               <h2>Library Genie</h2>
               <div className="project-skills-list">
@@ -120,11 +124,15 @@ const Projects = () => {
                 GitHub Link
               </a>
             </div>
-            <img alt="Project Images" src="/pokedex-photo.png" />
+            <img
+              alt="Project Images"
+              src="/pokedex-photo.webp"
+              loading="lazy"
+            />
           </div>
 
           <div className="card" id="project-card3" data-aos="flip-left">
-            <img alt="Project Images" src="/auth-photo.png" />
+            <img alt="Project Images" src="/auth-photo.webp" loading="lazy" />
             <div className="projects-card-content">
               <h2>Authentication WebApp</h2>
               <div className="project-skills-list">

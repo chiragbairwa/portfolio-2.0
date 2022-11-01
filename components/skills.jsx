@@ -1,3 +1,5 @@
+import Image from 'next/future/image'
+
 const Skills = () => {
   return (
     <>
@@ -162,10 +164,11 @@ const Skills = () => {
           </div>
         </div>
 
-        <img
+        <Image
           src="/skills-illustration.svg"
           alt="Skills Photo"
           height="550"
+          width="550"
           data-aos="fade-left"
         />
       </div>

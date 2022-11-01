@@ -1,5 +1,7 @@
 .welcome {
   display: flex;
+  flex-direction: row-reverse;
+  justify-content:space-between;
   margin: 8rem 0 0 0;
 }
 
@@ -80,29 +82,32 @@ h3 {
   margin-top: 0.3rem;
 }
 
-.welcome-photo > img {
-  margin-top: -7rem;
-  margin-bottom: 1rem;
+.welcome-photo {
+  margin-top: -8rem;
 }
 
 @media only screen and (max-width: 600px) {
   .welcome {
-    flex-direction: column-reverse;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+
   }
+
   .welcome-msg > h1 {
     font-size: 2rem;
     font-weight: 600;
   }
   .welcome-msg > h2 {
-    font-size: 1rem;
+    font-size: 2rem;
   }
   .welcome-msg > h3 {
-    font-size: 0.7rem;
+    font-size: 1.3rem;
     font-weight: 500;
   }
   .welcome-photo > img {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     align-items: center;
   }
 }

@@ -57,12 +57,36 @@
 
 @media only screen and (max-width: 600px) {
   .card {
-    justify-content: center;
     padding: 1rem;
-    margin: 2rem 5rem;
-    display: none;
+    margin: 2rem 1rem;
+    display: block;
+    width: fit-content;
   }
+
+  .second-project-card{
+    display: flex;
+    flex-direction:column-reverse;
+  }
+
   .card > img {
-    height: 10rem;
+    height: 160px;
+    margin-left: 1rem;  
+  }
+  .second-project-card > img{
+    margin-left: 0rem;
+  }
+  .projects-card-content {
+    color: white;
+    margin-left: 0;
+  }
+
+  .project-btn-container{
+    display: flex;
+    justify-content: center ;
+
+  }
+  .project-btn {
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
   }
 }

@@ -5,15 +5,15 @@
   justify-content: center;
 }
 
-.about-photo {
+/* .about-photo {
   width: 50vw;
-}
+} */
 .about-photo > img {
   width: 550px;
 }
-.about-content {
+/* .about-content {
   width: 50vw;
-}
+} */
 
 .about-content > p {
   font-size: 1.3rem;
@@ -21,10 +21,16 @@
 
 @media only screen and (max-width: 600px) {
   .about {
-    flex-direction: column;
+    display: flex;
     align-items: center;
+    flex-direction: column;
   }
   .about-photo > img {
-    width: 100%;
+    width: 350px;
+    height: 350px;
+    align-items: center;
+  }  
+  .about-content {
+    padding: 0 2rem;
   }
 }

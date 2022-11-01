@@ -4,6 +4,16 @@ const Welcome = () => {
   return (
     <>
       <div className="welcome">
+
+      <div className="welcome-photo" data-aos="fade-left">
+          <Image
+            src="/work-from-home.svg"
+            alt="Hero Photo"
+            width="550"
+            height="550"
+            priority
+          />
+        </div>
         <div data-aos="fade-right">
           <div className="welcome-msg">
             <h2>{"Hi, I'm Chirag"}</h2>
@@ -87,15 +97,7 @@ const Welcome = () => {
           </div>
         </div>
 
-        <div className="welcome-photo" data-aos="fade-left">
-          <Image
-            src="/work-from-home.svg"
-            alt="Hero Photo"
-            width="550"
-            height="550"
-            priority
-          />
-        </div>
+        
       </div>
     </>
   )

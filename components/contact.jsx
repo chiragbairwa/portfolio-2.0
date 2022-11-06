@@ -24,6 +24,7 @@ const Contact = () => {
         src="/contactus-illustration.svg"
         alt="Contact Me"
         data-aos="fade-right"
+        loading='lazy'
       />
       <div data-aos="fade-left">
         <h1>{"Let's Get in Touch"}</h1>

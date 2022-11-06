@@ -47,13 +47,10 @@ footer {
 } */
 
 @media only screen and (max-width: 600px) {
+
   main {
+  width: 100vw;
+    overflow-x: hidden;
     padding: 0 1rem;
-  }
-  footer {
-    padding: 0 0.9rem;
-  }
-  img {
-    object-fit: cover;
   }
 }

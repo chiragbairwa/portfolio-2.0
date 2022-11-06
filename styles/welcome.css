@@ -83,7 +83,8 @@ h3 {
 }
 
 .welcome-photo {
-  margin-top: -8rem;
+  margin-top: -12rem;
+  margin-left: 5rem;
 }
 
 @media only screen and (max-width: 600px) {
@@ -104,9 +105,13 @@ h3 {
     font-size: 1.3rem;
     font-weight: 500;
   }
+  
+  .welcome-photo {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
   .welcome-photo > img {
-    width: 350px;
-    height: 350px;
-    align-items: center;
+    width: 85vw;
+    height: fit-content;
   }
 }

@@ -52,7 +52,6 @@ textarea:focus {
 
 .contact > div > form > input[type='submit'] {
   cursor: pointer;
-  /* background-color: transparent; */
 }
 
 @media only screen and (max-width: 600px) {
@@ -63,7 +62,7 @@ textarea:focus {
   }
 
   .contact > img {
-    width: 350px;
-    height: 350px;
+    width: 100%;
+    height: fit-content;
   }
 }

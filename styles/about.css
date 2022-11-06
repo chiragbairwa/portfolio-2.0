@@ -24,8 +24,8 @@
     flex-direction: column;
   }
   .about-photo > img {
-    width: 350px;
-    height: 350px;
+    width: 85vw;
+    height: fit-content;
     align-items: center;
   }
   .about-content {

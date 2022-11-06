@@ -44,7 +44,7 @@ const Projects = () => {
         <h1>Projects</h1>
 
         <div className="projects-card">
-          <div className="card" id="project-card1" data-aos="flip-left">
+          <div className="card" id="project-card1" data-aos="fade-left">
             <img
               alt="Project Images"
               src="/library-photo.webp"
@@ -92,7 +92,7 @@ const Projects = () => {
             </div>
           </div>
 
-          <div className="card second-project-card" id="project-card2" data-aos="flip-right">
+          <div className="card second-project-card" id="project-card2" data-aos="fade-right">
             <div className="projects-card-content">
               <h2>Pokédex WebApp</h2>
               <div className="project-skills-list">
@@ -135,7 +135,7 @@ const Projects = () => {
             />
           </div>
 
-          <div className="card" id="project-card3" data-aos="flip-left">
+          <div className="card" id="project-card3" data-aos="fade-left">
             <img alt="Project Images" src="/auth-photo.webp" loading="lazy" />
             <div className="projects-card-content">
               <h2>Authentication WebApp</h2>

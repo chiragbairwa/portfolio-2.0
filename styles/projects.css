@@ -11,7 +11,7 @@
   padding: 1.5rem;
   margin: 2rem 5rem;
   border-radius: 8px;
-  background-color: #121212;
+  background-color: var(--project-card-color);
 }
 
 .card > img {
@@ -19,7 +19,7 @@
   border-radius: 8px;
 }
 .projects-card-content {
-  color: white;
+  color: var(--theme);
   margin-left: 2rem;
 }
 .projects-card-content > h2 {
@@ -63,27 +63,25 @@
     width: fit-content;
   }
 
-  .second-project-card{
+  .second-project-card {
     display: flex;
-    flex-direction:column-reverse;
+    flex-direction: column-reverse;
   }
 
   .card > img {
     height: 160px;
-    margin-left: 1rem;  
+    margin-left: 1rem;
   }
-  .second-project-card > img{
+  .second-project-card > img {
     margin-left: 0rem;
   }
   .projects-card-content {
-    color: white;
     margin-left: 0;
   }
 
-  .project-btn-container{
+  .project-btn-container {
     display: flex;
-    justify-content: center ;
-
+    justify-content: center;
   }
   .project-btn {
     padding: 0.5rem 1rem;

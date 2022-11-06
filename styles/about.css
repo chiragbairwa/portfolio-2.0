@@ -3,11 +3,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  column-gap: 2rem;
 }
 
-/* .about-photo {
-  width: 50vw;
-} */
 .about-photo > img {
   width: 550px;
 }
@@ -29,7 +27,7 @@
     width: 350px;
     height: 350px;
     align-items: center;
-  }  
+  }
   .about-content {
     padding: 0 2rem;
   }

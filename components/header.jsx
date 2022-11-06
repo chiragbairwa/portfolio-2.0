@@ -1,5 +1,4 @@
 import { useRef, useEffect, useState } from 'react'
-
 const Header = () => {
   let header = useRef(null)
   const [darkMode, setdarkMode] = useState('white')
@@ -36,6 +35,7 @@ const Header = () => {
       <span>CHIRAG</span>
       <div>
         <nav>
+          <a href="#">Home</a>
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
           <a href="#work">Work</a>
@@ -44,7 +44,7 @@ const Header = () => {
         {/* Dark mode Toggle */}
         <label className="switch">
           <input
-            type="button"
+            type="checkbox"
             id="dark-mode-toggle"
             onClick={themeModeHandler}
           />

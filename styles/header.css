@@ -1,14 +1,17 @@
 .header {
-  width: 100vw;
+  padding: 1rem 7rem;
+  overflow: hidden;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 7rem;
+
   z-index: 10;
   position: sticky;
+  position: -webkit-sticky;
   top: 1rem;
-  transition: top 0.3s;
+
+  transition: top 0.3s ease-in;
 }
 
 .header > span {
@@ -32,9 +35,8 @@
 .dark-mode {
   background-color: #121212;
   color: rgba(255, 255, 255, 0.9);
-
-  --color: rgba(255, 255, 255, 0.9);
-  --bg-color: #121212;
+  --theme: #121212;
+  --project-card-color: rgba(255, 255, 255);
 }
 .switch {
   display: block;
@@ -43,10 +45,8 @@
   width: 3.5rem;
   height: 2rem;
   cursor: pointer;
-  overflow: hidden;
 }
 .switch input {
-  position: absolute;
   top: -1.5rem;
   left: -1.5rem;
   width: 0;

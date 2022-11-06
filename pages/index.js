@@ -47,23 +47,22 @@ export default function Home() {
         <Skills />
         <Projects />
         <Contact />
+        <footer>
+          <p>
+            © 2022 - Designed and Developed by Chirag.
+            <br />
+            <Code /> with{' '}
+            <a href="https://nextjs.org/" rel="noreferrer" target="_blank">
+              NextJs
+            </a>
+            . Hosted on
+            <a href="https://vercel.com/" rel="noreferrer" target="_blank">
+              {' '}
+              Vercel.
+            </a>
+          </p>
+        </footer>
       </main>
-
-      <footer>
-        <p>
-          © 2022 - Designed and Developed by Chirag.
-          <br />
-          <Code /> with{' '}
-          <a href="https://nextjs.org/" rel="noreferrer" target="_blank">
-            NextJs
-          </a>
-          . Hosted on
-          <a href="https://vercel.com/" rel="noreferrer" target="_blank">
-            {' '}
-            Vercel.
-          </a>
-        </p>
-      </footer>
     </>
   )
 }

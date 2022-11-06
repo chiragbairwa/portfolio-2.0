@@ -4,8 +4,7 @@ const Welcome = () => {
   return (
     <>
       <div className="welcome">
-
-      <div className="welcome-photo" data-aos="fade-left">
+        <div className="welcome-photo" data-aos="fade-left">
           <Image
             src="/work-from-home.svg"
             alt="Hero Photo"
@@ -96,8 +95,6 @@ const Welcome = () => {
             </a>
           </div>
         </div>
-
-        
       </div>
     </>
   )

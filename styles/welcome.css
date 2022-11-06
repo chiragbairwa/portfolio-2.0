@@ -1,8 +1,8 @@
 .welcome {
   display: flex;
   flex-direction: row-reverse;
-  justify-content:space-between;
-  margin: 8rem 0 0 0;
+  justify-content: space-between;
+  padding: 11rem 0 0 0;
 }
 
 .welcome-msg h1,
@@ -91,7 +91,6 @@ h3 {
     flex-direction: column;
     align-items: center;
     padding: 0 1rem;
-
   }
 
   .welcome-msg > h1 {

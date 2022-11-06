@@ -1,19 +1,21 @@
 :root {
-  --color: rgba(255, 255, 255, 0.9);
-  --bg-color: #121212;
+  --color: #121212;
+  --bg-color: rgba(255, 255, 255, 0.9);
+
+  --theme: rgba(255, 255, 255, 0.9);
+
+  --project-card-color: #121212;
 }
 
 html,
 body {
-  scroll-behavior: smooth;
-  padding: 0;
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 body {
-  color: var(--bg-color);
-  background-color: var(--color);
+  color: var(--color);
+  background-color: var(--bg-color);
 }
 a {
   color: inherit;
@@ -29,7 +31,6 @@ main {
 }
 
 footer {
-  padding: 0 7rem 0 7rem;
   text-align: center;
   margin-top: 6rem;
 }

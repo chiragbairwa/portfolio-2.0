@@ -1,0 +1,92 @@
+.header {
+  padding: 1rem ;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  z-index: 10;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 1rem;
+
+  transition: top 0.1s ease;
+}
+
+.header > span {
+  font-family: var(--Iceberg);
+  font-size: 2rem;
+  user-select: none;
+}
+
+.header > div {
+  display: flex;
+  align-items: center;
+}
+.header > div > nav > a {
+  margin-right: 3rem;
+  transition: border 0.3s ease-in;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: rgba(255, 255, 255, 0.9);
+  --theme: #121212;
+  --project-card-color: rgba(255, 255, 255);
+}
+.switch {
+  display: block;
+  position: relative;
+  margin: auto;
+  width: 3.5rem;
+  height: 2rem;
+  cursor: pointer;
+}
+.switch input {
+  top: -1.5rem;
+  left: -1.5rem;
+  width: 0;
+  height: 0;
+}
+.switch input + span {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #99b4df;
+  border-radius: 20px;
+}
+.switch input:checked + span {
+  background: #346abf;
+}
+.switch input + span:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url(/light-mode.svg);
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: all 0.1s;
+}
+.switch input:checked + span:before {
+  background-image: url(/dark-mode.svg);
+  left: 1.7rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    padding: 1rem 3rem;
+  }
+  .header > div > nav {
+    display: none;
+  }
+  .switch {
+    float: right;
+  }
+}

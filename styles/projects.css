@@ -1,0 +1,90 @@
+.projects {
+  padding-top: 5rem;
+}
+.projects > h1 {
+  margin-left: 3rem;
+}
+.card {
+  display: flex;
+  justify-content: space-between;
+  user-select: none;
+  padding: 1.5rem;
+  margin: 2rem 5rem;
+  border-radius: 8px;
+  background-color: var(--project-card-color);
+}
+
+.card > img {
+  height: 260px;
+  border-radius: 8px;
+}
+.projects-card-content {
+  color: var(--theme);
+  margin-left: 2rem;
+}
+.projects-card-content > h2 {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.project-skills-list {
+  display: flex;
+}
+.project-skills-list > div {
+  display: flex;
+  margin-top: 1rem;
+}
+.project-skills-list > div > span {
+  margin: 0 1rem 0 0.2rem;
+}
+
+.projects-card-content > p {
+  margin: 1.5rem 0;
+}
+
+.project-btn {
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+  border-radius: 4px;
+  border: 1px solid currentColor;
+}
+
+.project-btn:hover {
+  color: var(--color);
+  background-color: #99b4df;
+  border: 1px solid #99b4df;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    padding: 1rem;
+    margin: 2rem 1rem;
+    display: block;
+    width: fit-content;
+  }
+
+  .second-project-card {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .card > img {
+    height: 160px;
+    margin-left: 1rem;
+  }
+  .second-project-card > img {
+    margin-left: 0rem;
+  }
+  .projects-card-content {
+    margin-left: 0;
+  }
+
+  .project-btn-container {
+    display: flex;
+    justify-content: center;
+  }
+  .project-btn {
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+  }
+}

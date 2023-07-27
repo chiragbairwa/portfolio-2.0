@@ -1,0 +1,112 @@
+.welcome {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 11rem 0 0 0;
+}
+
+.welcome-msg h1,
+h2,
+h3 {
+  margin: 0 0;
+  font-weight: 500;
+}
+.welcome-msg > h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.welcome-msg > h2 {
+  font-size: 2rem;
+}
+.welcome-msg > h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.welcome-cta {
+  display: flex;
+  margin-top: 3rem;
+  align-items: center;
+}
+
+.resume-btn {
+  border: 1px solid currentColor;
+  padding: 0.5rem 1rem;
+  border-radius: 2px;
+  color: currentColor;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: color 150ms ease-in-out;
+}
+.resume-btn:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 100%;
+  background: #99b4df;
+  z-index: -1;
+  transition: width 150ms ease-in-out;
+  border-radius: 2px;
+}
+
+.resume-btn:hover {
+  color: #fff;
+}
+.resume-btn:hover:after {
+  width: 110%;
+}
+.welcome-cta > a {
+  margin-right: 1rem;
+  transition: all 0.1s;
+}
+.welcome-cta > a:nth-child(n + 2):hover {
+  transform: scale(1.2);
+}
+.welcome-cta > a:nth-child(2):hover {
+  color: currentColor;
+}
+.welcome-cta > a:nth-child(3):hover {
+  color: #0a66c2;
+}
+.welcome-cta > a:nth-child(4):hover {
+  color: #1da1f2;
+}
+.welcome-cta > a:nth-child(5):hover {
+  color: #5865f2;
+}
+.welcome-cta > a > svg {
+  height: 1.8rem;
+  margin-top: 0.3rem;
+}
+
+.welcome-photo {
+  margin-top: -8rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .welcome {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+  }
+
+  .welcome-msg > h1 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .welcome-msg > h2 {
+    font-size: 2rem;
+  }
+  .welcome-msg > h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+  .welcome-photo > img {
+    width: 350px;
+    height: 350px;
+    align-items: center;
+  }
+}

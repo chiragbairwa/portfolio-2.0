@@ -1,0 +1,53 @@
+.contact {
+  padding-top: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact > img {
+  margin-top: 3rem;
+  height: 500px;
+  margin-right: 6rem;
+  border-radius: 20px;
+}
+
+.contact > div > form > input {
+  border: 3px solid #aaa;
+  border-radius: 4px;
+  outline: none;
+  padding: 8px;
+  height: 2rem;
+  border: 1px solid #ccc;
+  padding: 7px 14px 9px;
+  transition: all 0.4s ease;
+}
+
+.contact > div > form > input:not([type='submit']):focus {
+  border-color: #99b4df;
+  box-shadow: 0 0 8px 0 #99b4df;
+}
+
+textarea {
+  resize: none;
+  height: 8rem;
+  border-color: #ccc;
+  border-radius: 4px;
+}
+
+textarea:focus {
+  border-color: #99b4df;
+  box-shadow: 0 0 8px 0 #99b4df;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1rem;
+  }
+
+  .contact > img {
+    width: 350px;
+    height: 350px;
+  }
+}

@@ -2,11 +2,11 @@ import Image from 'next/image'
 
 const Skills = () => {
   return (
-    <>
-      <h1 className="pl-32 mt-16 text-3xl " id="skills">
+    <div className='pt-28' id="skills">
+      <h1 className="text-3xl">
         Skills & Experiences
       </h1>
-      <div className="flex justify-between pt-8">
+      <div className="md:flex justify-between mt-8">
         <div>
           <div className="skills-front">
             {/* <p>Front-End Tech</p> */}
@@ -175,7 +175,7 @@ const Skills = () => {
           className='w-[600px] md:-mt-28'
         />
       </div>
-    </>
+    </div>
   )
 }
 

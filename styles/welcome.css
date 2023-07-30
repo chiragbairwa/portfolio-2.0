@@ -1,8 +1,6 @@
 .welcome {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-between;
-  padding: 11rem 0 0 0;
 }
 
 .welcome-msg h1,
@@ -24,7 +22,6 @@ h3 {
 }
 .welcome-cta {
   display: flex;
-  margin-top: 3rem;
   align-items: center;
 }
 
@@ -80,10 +77,6 @@ h3 {
 .welcome-cta > a > svg {
   height: 1.8rem;
   margin-top: 0.3rem;
-}
-
-.welcome-photo {
-  margin-top: -8rem;
 }
 
 @media only screen and (max-width: 600px) {

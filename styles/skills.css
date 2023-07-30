@@ -1,8 +1,6 @@
 .skills-grid {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  justify-content: center;
-  margin: 8px 7rem;
   color: currentColor;
 }
 .skills-grid > svg {
@@ -69,11 +67,6 @@
 .firebase-svg:hover {
   border: 1px solid #ffca28;
   fill: #ffca28;
-}
-
-.skills > img {
-  margin-top: -5rem;
-  overflow: hidden;
 }
 
 @media only screen and (max-width: 600px) {

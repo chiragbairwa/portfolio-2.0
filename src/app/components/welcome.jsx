@@ -1,33 +1,30 @@
-"use client"
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Welcome = () => {
   return (
-      <div className="welcome">
-        <div className="welcome-photo" data-aos="fade-left">
-          <Image
-            src="/work-from-home.svg"
-            alt="Hero Photo"
-            width="550"
-            height="550"
-            priority
-          />
-        </div>
-        <div data-aos="fade-right">
+      <div className="flex flex-row-reverse justify-between items-center">
+        <Image src="/work-from-home.svg" alt="Hero Photo"
+          width="550"
+          height="550"
+          className='md:-mt-4'
+          priority
+        />
+        <div>
           <div className="welcome-msg">
             <h2>{"Hi, I'm Chirag"}</h2>
             <h1>Full Stack Developer.</h1>
             <h3>I love creating sleek UI & bring them to life with code.</h3>
           </div>
           <div className="welcome-cta">
-            <a
+            <Link
               href="https://docs.google.com/document/d/1wL4Ehjdug3QqX2hZ89xwo7L4lpX0w4l-8l_NilREjCM/edit?usp=sharing"
               target="_blank"
               rel="noreferrer noopener"
-              className="resume-btn"
+              className="resume-btn mt-2"
             >
               My Resume
-            </a>
+            </Link>
             <a
               href="https://github.com/chiragbairwa"
               target="_blank"

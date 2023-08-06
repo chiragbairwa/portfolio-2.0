@@ -6,24 +6,27 @@ const Contact = () => {
     senderName: "",
     senderEmail: "",
     senderSubject: "",
-    senderText: ""
+    senderMsg: ""
   })
+
   const formHandler = (e) => {
     e.preventDefault()
-    console.log(e)
-    // Email.send({
-    //   Host: 'smtp.elasticemail.com',
-    //   Username: process.env.NEXT_PUBLIC_SMTP_USERNAME,
-    //   Password: process.env.NEXT_PUBLIC_SMTP_PASSWORD,
-    //   To: 'chirag.dev18@gmail.com',
-    //   From: 'chirag.dev18@gmail.com',
-    //   Subject: data.senderSubject.current.value,
-    //   Body: `From ${data.senderName} \n ${data.senderEmail} ,\n ${data.senderText}`,
-    // }).then((message) => alert(message))
+    console.log(data)
+    
+    fetch("/api/contact",{
+      method:"POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(data)
+    })
   }
 
-  const handler = (e)=>{
-    console.log(e)
+  const inputHandler = (e)=>{
+    let element = e.target.name;
+    let value = e.target.value;
+
+    setData({...data, [element]:value})
   }
 
   return (
@@ -32,14 +35,14 @@ const Contact = () => {
         src="/contactus-illustration.svg"
         alt="Contact Me"
       />
-      <div>
+      <div className='pr-8'>
         <p className='mb-4 text-3xl'>{"Let's Get in Touch"}</p>
 
         <form onSubmit={formHandler} className='flex flex-col gap-4'>
-          <input type="text" name='name' onChange={handler} placeholder="Your Name" />
-          <input type="email" name='email' onChange={handler} placeholder="Your Email" />
-          <input type="text" name='reason' onChange={handler} placeholder="Reason for contact" />
-          <textarea onChange={handler} name='msg' className='rounded border p-2' placeholder='Your Text'/>
+          <input type="text" name='senderName' onChange={inputHandler} placeholder="Your Name" />
+          <input type="email" name='senderEmail' onChange={inputHandler} placeholder="Your Email" />
+          <input type="text" name='senderSubject' onChange={inputHandler} placeholder="Reason for contact" />
+          <textarea onChange={inputHandler} name='senderMsg' className='rounded border p-2' placeholder='Your Text'/>
           <button type='submit' className='rounded border py-1 px-2'>Send Message</button>
         </form>
       </div>

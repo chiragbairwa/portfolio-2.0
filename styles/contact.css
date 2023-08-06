@@ -1,14 +1,11 @@
 .contact {
-  padding-top: 5rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .contact > img {
-  margin-top: 3rem;
   height: 500px;
-  margin-right: 6rem;
-  border-radius: 20px;
 }
 
 .contact > div > form > input {

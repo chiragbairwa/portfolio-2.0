@@ -44,7 +44,7 @@ const Header = () => {
           <a href="#contact">Contact</a>
         </nav>
         {/* Dark mode Toggle */}
-        <label className="switch">
+        <label className="switch transform-gpu">
           <input type="checkbox" id="dark-mode-toggle" onClick={themeModeHandler} />
           <span></span>
         </label>

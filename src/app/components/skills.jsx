@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const Skills = () => {
   return (
-    <div className='pt-28' id="skills">
+    <div className='pt-24' id="skills">
       <h1 className="text-3xl">
         Skills & Experiences
       </h1>

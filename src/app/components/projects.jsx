@@ -1,5 +1,3 @@
-"use client"
-
 const Projects = () => {
   const FirebaseIcon = () => (
     <div className="flex rounded gap-1 border p-1 cursor-default">
@@ -13,7 +11,7 @@ const Projects = () => {
         <title>Firebase</title>
         <path d="M3.89 15.672L6.255.461A.542.542 0 017.27.288l2.543 4.771zm16.794 3.692l-2.25-14a.54.54 0 00-.919-.295L3.316 19.365l7.856 4.427a1.621 1.621 0 001.588 0zM14.3 7.147l-1.82-3.482a.542.542 0 00-.96 0L3.53 17.984z" />
       </svg>
-      <span>ReactJs</span>
+      <span>Firebase</span>
 
     </div>
   );
@@ -52,17 +50,54 @@ const Projects = () => {
 
   return (
     <>
-      <div className="projects pt-28" id="work">
+      <div className="projects pt-24" id="work">
         <p className="text-3xl mb-4">Projects</p>
         
         <div className="flex justify-between flex-wrap gap-4">
+          {/* Ecommerce */}
+          <div className="rounded p-2 border w-72 ">
+            <img
+                alt="Project Images"
+                src="/ecom.png"
+                loading="lazy"
+                className="rounded hover:scale-150 transition-transform hover:cursor-crosshair"
+              />
+              <div className="py-2">
+                <div className="flex gap-2 text-sm">
+                    <ReactIcon />
+                    <NextJsIcon />
+                </div>
+                <p className="font-bold my-2">Ecommerce Store</p>
+                <p >
+                  This is an Ecommerce Store.
+                </p>
+
+                <div className="flex justify-around mt-12">
+                  <a href="https://ecom-chirag.vercel.app/"
+                    className="rounded border py-2 px-3 hover:border-blue-600 hover:text-blue-600"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    Live Link
+                  </a>
+                  <a href="https://github.com/chiragbairwa/ecommerce"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className="rounded border py-2 px-3 hover:border-blue-600 hover:text-blue-600"
+                  >
+                    GitHub Link
+                  </a>
+                  </div>
+                </div>
+          </div>  
           {/* Library */}
           <div className="rounded p-2 border w-72">
             <img
                 alt="Project Images"
                 src="/library-photo.webp"
                 loading="lazy"
-                className="rounded"
+                className="rounded hover:scale-150 transition-transform hover:cursor-crosshair"
+
               />
               <div className="py-2">
                 <div className="flex justify-between text-sm">
@@ -101,7 +136,7 @@ const Projects = () => {
                 alt="Project Images"
                 src="/pokedex-photo.webp"
                 loading="lazy"
-                className="rounded"
+                className="rounded hover:scale-150 transition-transform hover:cursor-crosshair"
               />
               <div className="py-2">
                 <div className="flex gap-2 text-sm">
@@ -133,21 +168,21 @@ const Projects = () => {
                 </div>
           </div>  
           {/* Authentication */}
-          <div className="rounded p-2 border w-72 ">
+          {/* <div className="rounded p-2 border w-72 ">
             <img
                 alt="Project Images"
                 src="/auth-photo.webp"
                 loading="lazy"
-                className="rounded"
-              />
+                className="rounded hover:scale-150 transition-transform hover:cursor-crosshair"
+            />
               <div className="py-2">
-                <div className="flex gap-2 text-sm">
+                <div className="flex justify-between text-sm">
                     <ReactIcon />
                     <NextJsIcon />
                     <FirebaseIcon />
                 </div>
-                <p className="my-2">Authentication WebApp</p>
-                <p className="text-sm">
+                <p className="my-2 font-bold">Authentication WebApp</p>
+                <p className="">
                   This WebApp can be used to know about your favourite Pokémon.
                 </p>
 
@@ -168,44 +203,7 @@ const Projects = () => {
                   </a>
                   </div>
                 </div>
-          </div>  
-          {/* Ecommerce */}
-          <div className="rounded p-2 border w-72 ">
-            <img
-                alt="Project Images"
-                src="/library-photo.webp"
-                loading="lazy"
-                className="rounded"
-              />
-              <div className="py-2">
-                <div className="flex gap-2 text-sm">
-                    <ReactIcon />
-                    <NextJsIcon />
-                </div>
-                <p className="font-bold my-2">Pokédex WebApp</p>
-                <p >
-                  This WebApp can be used to know about your favourite Pokémon.
-                </p>
-
-                <div className="flex justify-around mt-2">
-                  <a href="https://library-liard.vercel.app/login"
-                    className="rounded border py-2 px-3 hover:border-blue-600 hover:text-blue-600"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                  >
-                    Live Link
-                  </a>
-                  <a href="https://github.com/chiragbairwa/library-college"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="rounded border py-2 px-3 hover:border-blue-600 hover:text-blue-600"
-                  >
-                    GitHub Link
-                  </a>
-                  </div>
-                </div>
-          </div>  
-          
+          </div>             */}
         </div>
       </div>
     </>

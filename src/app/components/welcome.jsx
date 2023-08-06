@@ -18,10 +18,10 @@ const Welcome = () => {
           </div>
           <div className="welcome-cta">
             <Link
-              href="https://docs.google.com/document/d/1wL4Ehjdug3QqX2hZ89xwo7L4lpX0w4l-8l_NilREjCM/edit?usp=sharing"
+              href="https://docs.google.com/document/d/1qAGEx9B28m8ZBddD_rNjrMZpUE5Z1SyQ/edit?usp=drive_link&ouid=117183201856226964712&rtpof=true&sd=true"
               target="_blank"
               rel="noreferrer noopener"
-              className="resume-btn mt-2"
+              className="resume-btn mt-2 transform-gpu "
             >
               My Resume
             </Link>

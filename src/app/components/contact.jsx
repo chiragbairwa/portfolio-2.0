@@ -1,4 +1,5 @@
 "use client"
+import Image from 'next/image'
 import { useState } from 'react'
 
 const Contact = () => {
@@ -30,19 +31,21 @@ const Contact = () => {
   }
 
   return (
-    <div className="contact mt-16" id="contact">
-      <img
+    <div className="contact flex flex-col md:flex-row mt-16 justify-center" id="contact">
+      <Image
         src="/contactus-illustration.svg"
         alt="Contact Me"
+        width={550}
+        height={550}
       />
       <div className='pr-8'>
         <p className='mb-4 text-3xl'>{"Let's Get in Touch"}</p>
 
-        <form onSubmit={formHandler} className='flex flex-col gap-4'>
+        <form onSubmit={formHandler} className='flex flex-col gap-4 text-[currentcolor]'>
           <input type="text" name='senderName' onChange={inputHandler} placeholder="Your Name" />
           <input type="email" name='senderEmail' onChange={inputHandler} placeholder="Your Email" />
           <input type="text" name='senderSubject' onChange={inputHandler} placeholder="Reason for contact" />
-          <textarea onChange={inputHandler} name='senderMsg' className='rounded border p-2' placeholder='Your Text'/>
+          <textarea onChange={inputHandler} name='senderMsg' className='rounded border p-2 text-black' placeholder='Your message'/>
           <button type='submit' className='rounded border py-1 px-2'>Send Message</button>
         </form>
       </div>

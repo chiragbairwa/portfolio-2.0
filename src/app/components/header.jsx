@@ -33,7 +33,7 @@ const Header = () => {
     document.body.classList.toggle('dark-mode')
   }
   return (
-    <div className="header px-24" ref={header}>
+    <div className="header md:px-24" ref={header}>
       <span>CHIRAG</span>
       <div>
         <nav className='text-lg'>

@@ -172,7 +172,7 @@ const Skills = () => {
           alt="Skills Photo"
           height="550"
           width="550"
-          className='w-[600px] md:-mt-28'
+          className='md:-mt-28'
         />
       </div>
     </div>

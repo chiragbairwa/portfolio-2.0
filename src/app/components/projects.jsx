@@ -53,7 +53,7 @@ const Projects = () => {
       <div className="projects pt-24" id="work">
         <p className="text-3xl mb-4">Projects</p>
         
-        <div className="flex justify-between flex-wrap gap-4">
+        <div className="flex flex-col md:flex-row flex-wrap items-center justify-between gap-4">
           {/* Ecommerce */}
           <div className="rounded p-2 border w-72 ">
             <img

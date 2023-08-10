@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const Welcome = () => {
   return (
-      <div className="flex flex-row-reverse justify-between items-center">
+      <div className="md:flex flex-row-reverse justify-between items-center">
         <Image src="/work-from-home.svg" alt="Hero Photo"
           width="550"
           height="550"
@@ -19,9 +19,7 @@ const Welcome = () => {
           <div className="welcome-cta">
             <Link
               href="https://docs.google.com/document/d/1qAGEx9B28m8ZBddD_rNjrMZpUE5Z1SyQ/edit?usp=drive_link&ouid=117183201856226964712&rtpof=true&sd=true"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="resume-btn mt-2 transform-gpu "
+              target="_blank" rel="noreferrer noopener" className="resume-btn mt-2 transform-gpu"
             >
               My Resume
             </Link>

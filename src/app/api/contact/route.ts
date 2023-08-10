@@ -1,6 +1,5 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
-// import ElasticEmail from '@elasticemail/elasticemail-client';
 
 
 export async function POST(request: NextRequest){
@@ -47,5 +46,6 @@ export async function POST(request: NextRequest){
     //       console.log('API called successfully.');
     //     }
     //   };
-    //   api.emailsPost(email, callback);      
+    //   api.emailsPost(email, callback);    
+    return NextResponse.json({message : ""},{status : 200})  
 }

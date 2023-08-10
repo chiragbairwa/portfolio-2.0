@@ -60,7 +60,7 @@
     padding: 1rem;
     margin: 2rem 1rem;
     display: block;
-    width: fit-content;
+    /* width: fit-content; */
   }
 
   .second-project-card {

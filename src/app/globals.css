@@ -48,6 +48,26 @@ footer {
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
+/* Simple */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 16px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: rgb(153, 180, 223, 0.1);
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 20px;
+  background: rgb(153, 180, 223);
+}
+::-webkit-scrollbar-thumb:hover{
+  background: rgb(153, 180, 223, 0.4);
+
+}
+::-webkit-scrollbar-thumb:active{
+  background: rgb(153, 180, 223, 0.9);
+}
 
 @media (prefers-color-scheme: dark) {
   :root {

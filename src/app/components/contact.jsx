@@ -31,14 +31,14 @@ const Contact = () => {
   }
 
   return (
-    <div className="contact flex flex-col md:flex-row mt-16 justify-center" id="contact">
+    <div className="contact flex flex-col md:flex-row mt-16 justify-between" id="contact">
       <Image
         src="/contactus-illustration.svg"
         alt="Contact Me"
-        width={550}
-        height={550}
+        width={500}
+        height={500}
       />
-      <div className='pr-8'>
+      <div className='pr-8 md:pt-8'>
         <p className='mb-4 text-3xl'>{"Let's Get in Touch"}</p>
 
         <form onSubmit={formHandler} className='flex flex-col gap-4 text-[currentcolor]'>
@@ -46,7 +46,7 @@ const Contact = () => {
           <input type="email" name='senderEmail' onChange={inputHandler} placeholder="Your Email" />
           <input type="text" name='senderSubject' onChange={inputHandler} placeholder="Reason for contact" />
           <textarea onChange={inputHandler} name='senderMsg' className='rounded border p-2 text-black' placeholder='Your message'/>
-          <button type='submit' className='rounded border py-1 px-2'>Send Message</button>
+          <button type='submit' className='rounded bg-white text-black border border-[#aaa] py-1 px-2 hover:text-white hover:bg-[#99b4df] hover:border-[#99b4df]'>Send Message</button>
         </form>
       </div>
     </div>

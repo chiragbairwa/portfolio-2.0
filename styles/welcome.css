@@ -47,6 +47,7 @@ h3 {
 
 .resume-btn:hover {
   color: #fff;
+  border-color: #99b4df;
 }
 .resume-btn:hover:after {
   width: 110%;

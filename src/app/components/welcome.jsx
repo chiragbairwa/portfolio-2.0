@@ -5,8 +5,8 @@ const Welcome = () => {
   return (
       <div className="md:flex flex-row-reverse justify-between items-center">
         <Image src="/work-from-home.svg" alt="Hero Photo"
-          width="550"
-          height="550"
+          width="530"
+          height="530"
           className='md:-mt-4'
           priority
         />
@@ -42,7 +42,7 @@ const Welcome = () => {
 
             {/* LinkedIn */}
             <a
-              href="https://www.linkedin.com/in/chirag-bairwa"
+              href="https://www.linkedin.com/in/chiragbairwa"
               target="_blank"
               rel="noreferrer noopener"
             >
@@ -74,7 +74,7 @@ const Welcome = () => {
               </svg>
             </a>
             <a
-              href="http://discordapp.com/users/Chirag#0550"
+              href="https://discord.com/users/1016294158337581096"
               target="_blank"
               rel="noreferrer noopener"
             >

@@ -60,7 +60,7 @@ const Projects = () => {
                 alt="Project Images"
                 src="/ecom.png"
                 loading="lazy"
-                className="rounded hover:scale-150 transition-transform hover:cursor-crosshair"
+                className="rounded md:hover:scale-150 transition-transform hover:cursor-crosshair"
               />
               <div className="py-2">
                 <div className="flex gap-2 text-sm">
@@ -96,7 +96,7 @@ const Projects = () => {
                 alt="Project Images"
                 src="/library-photo.webp"
                 loading="lazy"
-                className="rounded hover:scale-150 transition-transform hover:cursor-crosshair"
+                className="rounded md:hover:scale-150 transition-transform hover:cursor-crosshair"
 
               />
               <div className="py-2">
@@ -136,7 +136,7 @@ const Projects = () => {
                 alt="Project Images"
                 src="/pokedex-photo.webp"
                 loading="lazy"
-                className="rounded hover:scale-150 transition-transform hover:cursor-crosshair"
+                className="rounded md:hover:scale-150 transition-transform hover:cursor-crosshair"
               />
               <div className="py-2">
                 <div className="flex gap-2 text-sm">

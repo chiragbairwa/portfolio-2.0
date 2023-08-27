@@ -112,7 +112,7 @@ const Projects = () => {
 
                 <div className="flex justify-around mt-2">
                   <a
-                    href="https://library-liard.vercel.app/login"
+                    href="https://lib-chirag.vercel.app/"
                     target="_blank"
                     rel="noreferrer noopener"
                     className="rounded border py-2 px-3 hover:border-blue-600 hover:text-blue-600"

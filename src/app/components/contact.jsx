@@ -41,7 +41,7 @@ const Contact = () => {
       <div className='pr-8 md:pt-8'>
         <p className='mb-4 text-3xl'>{"Let's Get in Touch"}</p>
 
-        <form onSubmit={formHandler} className='flex flex-col gap-4 text-[currentcolor]'>
+        <form onSubmit={formHandler} className='flex flex-col gap-4 text-black '>
           <input type="text" name='senderName' onChange={inputHandler} placeholder="Your Name" />
           <input type="email" name='senderEmail' onChange={inputHandler} placeholder="Your Email" />
           <input type="text" name='senderSubject' onChange={inputHandler} placeholder="Reason for contact" />

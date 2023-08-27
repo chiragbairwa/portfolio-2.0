@@ -59,7 +59,7 @@ const Welcome = () => {
 
             {/* Twitter */}
             <a
-              href="https://www.twitter.com/chiragbairwa"
+              href="https://www.x.com/chiragbairwa"
               target="_blank"
               rel="noreferrer noopener"
             >
